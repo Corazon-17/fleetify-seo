@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const logos = ["BBSP", "Blog", "HK SIS", "IPL", "Yosua"];
+const logos = ["BBSP", "Blog", "HK_SIS", "IPL", "Yosua"];
 
 export function Section2() {
   return (
