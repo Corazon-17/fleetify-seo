@@ -32,7 +32,7 @@ export function JumpToFeature() {
   }, [scrollPosition]);
 
   return (
-    <Link
+    <a
       href="#features"
       className="flex fixed bottom-4 md:bottom-12 right-4 md:right-12 z-50 justify-center items-center w-16 h-16 rounded-full bg-black text-white transition-all duration-500"
       style={{ opacity: showButton ? "100" : "0", visibility: showButton ? "visible" : "hidden" }}
@@ -40,6 +40,6 @@ export function JumpToFeature() {
       <div className="flex flex-col items-center -translate-y-1.5">
         <FaCaretUp size={24} /> <span className="text-xs">Features</span>
       </div>
-    </Link>
+    </a>
   );
 }
