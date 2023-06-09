@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { FaCaretDown, FaPlus, FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 export function Section9() {
   return (
@@ -45,12 +45,12 @@ function FAQ({ title, body }: { title: string; body: string }) {
             toggle ? "-rotate-180" : "rotate-0"
           }`}
         >
-          {toggle ? <FaPlus /> : <FaMinus />}
+          {toggle ? <FaMinus /> : <FaPlus />}
         </div>
       </button>
       <div
         className={`flex flex-col overflow-hidden transition-all duration-300 ${
-          toggle ? "max-h-48 border-b border-custom-yellow md:border-black mb-2" : "max-h-0"
+          toggle ? "max-h-full border-b border-custom-yellow md:border-black mb-2" : "max-h-0"
         }`}
       >
         <p className="w-full py-1.5 shadow-sm">{body}</p>
